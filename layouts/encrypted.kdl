@@ -1,0 +1,13 @@
+layout {
+    pane command="node" { 
+      args "src/public-channel.js" 
+    }
+    pane split_direction="vertical" {
+        pane command="node" { 
+          args "src/encrypted.js"
+        }
+        pane command="node" {
+          args "src/encrypted.js"
+        }
+    }
+}
